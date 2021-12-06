@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Attention solves TSP
+title: Attention Solves TSP
 tags: [Traveling Salesman Problem, Combinatorial Optimization Problem, Attention Network]
 authors: Guo, Xiaotong, Massachusetts Institute of Technology
 ---
