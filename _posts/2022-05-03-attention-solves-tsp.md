@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Example content (Basic Markdown)
-tags: [test, tutorial, markdown]
-authors: Doe, John, School of Life; Doe, Jane, A School
+title: Attention solves TSP
+tags: [TSP, Attention Network]
+authors: Guo, Xiaotong, Massachusetts Institute of Technology
 ---
+
+{% raw %}![ICLR LOGO]({{ site.url }}/public/images/2021-09-01-sample-submission/ICLR-logo.png){% endraw %}
 
 
 <div class="message">
@@ -120,4 +122,3 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
 
 -----
-
