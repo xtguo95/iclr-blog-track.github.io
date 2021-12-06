@@ -1,11 +1,9 @@
 ---
 layout: post
 title: Attention Solves TSP
-tags: [Traveling Salesman Problem, Combinatorial Optimization Problem, Attention Network]
 authors: Guo, Xiaotong, Massachusetts Institute of Technology
+tags: [Traveling Salesman Problem, Combinatorial Optimization Problem, Attention Network]
 ---
-
-![Example Image](https://iclr.cc/static/core/img/ICLR-logo.svg)
 
 This post outlines a few more things you may need to know for creating and configuring your blog posts.
 
