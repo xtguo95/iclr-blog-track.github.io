@@ -5,7 +5,7 @@ tags: [TSP, Attention Network]
 authors: Guo, Xiaotong, Massachusetts Institute of Technology
 ---
 
-{% raw %}![ICLR LOGO]({{ site.url }}/public/images/2021-09-01-sample-submission/ICLR-logo.png){% endraw %}
+![Example Image](https://iclr.cc/static/core/img/ICLR-logo.svg)
 
 
 <div class="message">
