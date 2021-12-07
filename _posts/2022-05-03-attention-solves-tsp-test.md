@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Attention Solves TSP: Insights on Solving Real-world Instances
+title: Test
 authors: Guo, Xiaotong, Massachusetts Institute of Technology
 tags: [Traveling Salesman Problem, Combinatorial Optimization, Attention Network]
 ---
