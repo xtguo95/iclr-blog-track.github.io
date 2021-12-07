@@ -26,7 +26,7 @@ The Traveling Salesman Problem (TSP) is a traditional combinatorial optimization
 that can not be solved with polynomial time algorithms. The TSP requires to find the shortest distance route that visits all
 given locations and return to the original location.
 
-![This is an image](TSP.png)
+![TSP instance]({{ site.url }}/public/images/2022-05-03-attention-solves-tsp/TSP.png)
 *<p align="center">Figure 1. TSP instance </p>*
 
 TSP is typically solved with optimization-driven approaches where TSP is modelled as an Integer Linear Program (ILP) and solved
