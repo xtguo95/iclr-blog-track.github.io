@@ -26,7 +26,8 @@ The Traveling Salesman Problem (TSP) is a traditional combinatorial optimization
 that can not be solved with polynomial time algorithms. The TSP requires to find the shortest distance route that visits all
 given locations and return to the original location.
 
-![TSP](https://xtguo95.github.io/iclr-blog-track.github.io/public/images/2022-05-03-attention-solves-tsp/TSP.png)
+![TSP](../public/images/2022-05-03-attention-solves-tsp/TSP.png)
+*<p align="center">Figure 1. TSP instance </p>*
 
 TSP is typically solved with optimization-driven approaches where TSP is modelled as an Integer Linear Program (ILP) and solved
 with off-the-shelf ILP solvers, e.g., Gurobi and CPLEX. However, large-scale TSP instances can not be solved optimally with
@@ -38,7 +39,7 @@ been found through optimization-driven methods.
 ### DNN to solve TSP
 
 On the other hand, the success of DNN in the past decade has drawn the attention of applying the DNN into solving the combinatorial
-optimization problem.
+optimization problem. [[Vinyals et al., 2019]](#Vinyals)
 
 ### Attention Mechanisms and Transformers
 
@@ -57,3 +58,5 @@ optimization problem.
 ## References
 
 <a name="Kool">Wouter Kool, Herke van Hoof, Max Welling. Attention, Learn to Solve Routing Problems! The International Conference on Learning Representations (ICLR), 2019. </a>
+
+<a name="Vinyals">Oriol Vinyals, Meire Fortunato, Navdeep Jaitly. Pointer Networks. Advances in Neural Information Processing Systems (NIPS) 28, 2015. </a>
