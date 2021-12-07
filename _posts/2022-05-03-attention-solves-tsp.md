@@ -27,7 +27,7 @@ that can not be solved with polynomial time algorithms. The TSP requires to find
 given locations and return to the original location.
 
 <!--- ![TSP](../public/images/2022-05-03-attention-solves-tsp/TSP.png) --->
-*<p align="center">Figure 1. TSP instance </p>*
+*Figure 1. TSP instance*
 
 TSP is typically solved with optimization-driven approaches where TSP is modelled as an Integer Linear Program (ILP) and solved
 with off-the-shelf ILP solvers, e.g., Gurobi and CPLEX. However, large-scale TSP instances can not be solved optimally with
@@ -81,7 +81,7 @@ $h_i^{(N)}: \bar{h}^{(N)} = \frac{1}{n}\sum_{i=1}^n h_i^{(N)}$. And all node emb
 the input for decoder. Figure 2 shows the detailed encoder structure.
 
 <!--- ![Encoder](../public/images/2022-05-03-attention-solves-tsp/Encoder.png) --->
-*<p align="center">Figure 2. Encoder Sturecture </p>*
+*Figure 2. Encoder Sturecture*
 
 ### Decoder Structure
 
@@ -92,7 +92,7 @@ of graph embeddings, node embeddings of first node and previous visited node. Wh
 are masked in the graph. Figure 3 shows the detailed decoder structure.
 
 <!--- ![Decoder](../public/images/2022-05-03-attention-solves-tsp/Decoder.png) --->
-*<p align="center">Figure 3. Decoder Sturecture </p>*
+*Figure 3. Decoder Sturecture*
 
 ### Training Algorithm
 
@@ -116,15 +116,18 @@ training speed. In the attention-based TSP model, a greedy rollout baseline mode
 improve over its self. The detailed training algorithm is shown in Figure 4.
 
 <!--- ![REINFORCE](../public/images/2022-05-03-attention-solves-tsp/REINFORCE.png) --->
-*<p align="center">Figure 4. Training algorithm</p>*
+*Figure 4. Training algorithm*
 
 ## Experiments
 
 In this section, only comparison results with TSP will be shown. More results regarding multiple generalizations of TSP can
 be found in the original paper. The code for conducting experiments can be found [here](https://github.com/wouterkool/attention-learn-to-route).
 
+Figure 5 shows the comparison results on solving TSP. The attention-based model is compared with optimization-driven models,
+naive heuristics and existing DNN approach for solving TSP. For the optimization-driven approach,
+
 <!--- ![TSP_RESULTS](../public/images/2022-05-03-attention-solves-tsp/TSP_RESULTS.png) --->
-*<p align="center">Figure 5. TSP Results</p>*
+*Figure 5. TSP Results*
 
 ## Discussions
 
