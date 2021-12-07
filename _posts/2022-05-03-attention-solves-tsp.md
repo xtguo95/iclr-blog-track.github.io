@@ -13,7 +13,7 @@ where the author participated with two excellent teammates Qingyi Wang and Baich
 to develop  innovative approaches leveraging non-conventional methods (e.g., machine learning) to produce solutions to the route sequencing problem,
 which could outperform traditional, optimization-driven operations research methods in terms of solution quality and computational cost.
 
-As a part of the exploration process for competing in this challenge, author's team implemented the attention model proposed
+As a part of the exploration process for competing in this challenge, author's team implemented the attention-based model proposed
 by Kool et al. and gained insights on how the proposed model performed on real-world routing problems. The author will summarize
 the attention-based model and discuss its performances on real-world instances and comparisons with traditional optimization-driven
 methods.
@@ -22,7 +22,19 @@ methods.
 
 ### Traveling Salesman Problem (TSP)
 
+{% include uk49_tour.html %}
+
+### DNN to solve TSP
+
+### Attention Mechanisms and Transformers
+
 ## Model Structure and Training Algorithm
+
+### Encoder Structure
+
+### Decoder Structure
+
+### Training Algorithm
 
 ## Experiments
 
