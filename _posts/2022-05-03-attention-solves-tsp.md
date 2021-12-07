@@ -28,8 +28,6 @@ given locations and return to the original location.
 
 ![TSP instance]({{ site.url }}/public/images/2022-05-03-attention-solves-tsp/TSP.png)
 
-[comment]: <> (*<p align="center">Figure 1. TSP instance </p>*)
-
 TSP is typically solved with optimization-driven approaches where TSP is modelled as an Integer Linear Program (ILP) and solved
 with off-the-shelf ILP solvers, e.g., Gurobi and CPLEX. However, large-scale TSP instances can not be solved optimally with
 solvers. Therefore, many researchers have focused on developing heuristics to solve the large-scale TSP instances, where their
