@@ -26,7 +26,6 @@ The Traveling Salesman Problem (TSP) is a traditional combinatorial optimization
 that can not be solved with polynomial time algorithms. The TSP requires to find the shortest distance route that visits all
 given locations and return to the original location.
 
-<!--- ![TSP](../public/images/2022-05-03-attention-solves-tsp/TSP.png) --->
 *Figure 1. TSP instance*
 
 TSP is typically solved with optimization-driven approaches where TSP is modelled as an Integer Linear Program (ILP) and solved
@@ -80,7 +79,6 @@ The encoder computes an aggregated embedding $\bar{h}^{(N)}$ of the input graph,
 $h_i^{(N)}: \bar{h}^{(N)} = \frac{1}{n}\sum_{i=1}^n h_i^{(N)}$. And all node embeddings and graph embedding will be used as
 the input for decoder. Figure 2 shows the detailed encoder structure.
 
-<!--- ![Encoder](../public/images/2022-05-03-attention-solves-tsp/Encoder.png) --->
 *Figure 2. Encoder Sturecture*
 
 ### Decoder Structure
@@ -91,7 +89,6 @@ periods $t' < t$. In the decoding process, we introduce a context node to indica
 of graph embeddings, node embeddings of first node and previous visited node. When moving to the next time period, the visited nodes
 are masked in the graph. Figure 3 shows the detailed decoder structure.
 
-<!--- ![Decoder](../public/images/2022-05-03-attention-solves-tsp/Decoder.png) --->
 *Figure 3. Decoder Sturecture*
 
 ### Training Algorithm
@@ -115,7 +112,6 @@ The key of this traning algorithm is to choose a good baseline $b(s)$, which can
 training speed. In the attention-based TSP model, a greedy rollout baseline model is utilized where the model is trained to
 improve over its self. The detailed training algorithm is shown in Figure 4.
 
-<!--- ![REINFORCE](../public/images/2022-05-03-attention-solves-tsp/REINFORCE.png) --->
 *Figure 4. Training algorithm*
 
 ## Experiments
