@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Attention Solves TSP: Insights on Solving Real-world Instances
+title: Attention Solves TSP
 authors: Guo, Xiaotong, Massachusetts Institute of Technology
 tags: [Traveling Salesman Problem, Combinatorial Optimization, Attention Network]
 ---
@@ -26,7 +26,7 @@ The Traveling Salesman Problem (TSP) is a traditional combinatorial optimization
 that can not be solved with polynomial time algorithms. The TSP requires to find the shortest distance route that visits all
 given locations and return to the original location.
 
-![[TSP]({{ site.url }}/public/images/2022-05-03-attention-solves-tsp/TSP.png)
+![TSP]({{ site.url }}/public/images/2021-05-03-attention-solves-tsp/TSP.png)
 *Figure 1. TSP instance*
 
 TSP is typically solved with optimization-driven approaches where TSP is modelled as an Integer Linear Program (ILP) and solved
@@ -80,7 +80,7 @@ The encoder computes an aggregated embedding $\bar{h}^{(N)}$ of the input graph,
 $h_i^{(N)}: \bar{h}^{(N)} = \frac{1}{n}\sum_{i=1}^n h_i^{(N)}$. And all node embeddings and graph embedding will be used as
 the input for decoder. Figure 2 shows the detailed encoder structure.
 
-![Encoder]({{ site.url }}/public/images/2022-05-03-attention-solves-tsp/Encoder.png)
+![Encoder]({{ site.url }}/public/images/2021-05-03-attention-solves-tsp/Encoder.png)
 *Figure 2. Encoder Sturecture*
 
 ### Decoder Structure
@@ -91,7 +91,7 @@ periods $t' < t$. In the decoding process, we introduce a context node to indica
 of graph embeddings, node embeddings of first node and previous visited node. When moving to the next time period, the visited nodes
 are masked in the graph. Figure 3 shows the detailed decoder structure.
 
-![Decoder]({{ site.url }}/public/images/2022-05-03-attention-solves-tsp/Decoder.png)
+![Decoder]({{ site.url }}/public/images/2021-05-03-attention-solves-tsp/Decoder.png)
 *Figure 3. Decoder Sturecture*
 
 ### Training Algorithm
@@ -115,7 +115,7 @@ The key of this traning algorithm is to choose a good baseline $b(s)$, which can
 training speed. In the attention-based TSP model, a greedy rollout baseline model is utilized where the model is trained to
 improve over its self. The detailed training algorithm is shown in Figure 4.
 
-![REINFORCE]({{ site.url }}/public/images/2022-05-03-attention-solves-tsp/REINFORCE.png)
+![REINFORCE]({{ site.url }}/public/images/2021-05-03-attention-solves-tsp/REINFORCE.png)
 *Figure 4. Training algorithm*
 
 ## Experiments
@@ -131,7 +131,7 @@ outperform other heuristic-based approaches and DNN-based approaches regarding o
 compared to the optimal scenario solved by optimization-driven solvers. Meanwhile, the computation time is significantly decreased
 when using AM compared to optimization solvers.
 
-![TSP_RESULTS]({{ site.url }}/public/images/2022-05-03-attention-solves-tsp/TSP_RESULTS.png)
+![TSP_RESULTS]({{ site.url }}/public/images/2021-05-03-attention-solves-tsp/TSP_RESULTS.png)
 *Figure 5. TSP Results*
 
 ## Discussions
