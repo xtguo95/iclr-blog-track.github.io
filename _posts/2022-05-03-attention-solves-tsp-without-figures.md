@@ -127,7 +127,6 @@ outperform other heuristic-based approaches and DNN-based approaches regarding o
 compared to the optimal scenario solved by optimization-driven solvers. Meanwhile, the computation time is significantly decreased
 when using AM compared to optimization solvers.
 
-<!--- ![TSP_RESULTS](../public/images/2022-05-03-attention-solves-tsp/TSP_RESULTS.png) --->
 *Figure 5. TSP Results*
 
 ## Discussions
